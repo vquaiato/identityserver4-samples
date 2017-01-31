@@ -1,0 +1,10 @@
+﻿@using System.Security.Claims
+@model IEnumerable<Claim>
+
+<h1>Secure Barapp</h1>
+
+
+@foreach (var claim in Model)
+{
+    <p>@claim.Type : @claim.Value</p>
+}
